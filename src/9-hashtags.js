@@ -1,3 +1,4 @@
 export const hashtags = (text) => {
-  return text
-}
+	let result = text.split(' ');
+	return result.filter((element) => element.includes('#'));
+};
